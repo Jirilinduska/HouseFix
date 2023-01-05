@@ -18,6 +18,13 @@ close.addEventListener('click', function(){
 */
 
 $(document).ready(function(){
+
+    // Najepojení WOW.js
+    
+    new WOW().init();
+
+    // Modální Okno
+
     var button = $('#button');
     var modal = $('#modal');
     var close = $('#close');
@@ -29,7 +36,9 @@ $(document).ready(function(){
     close.on('click', function(){
         modal.removeClass('modal_active');
     });
-    
+
+
+    // Slider
 
     $('.slider').slick({
         slidesToShow: 3,
