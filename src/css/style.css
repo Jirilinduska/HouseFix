@@ -598,4 +598,81 @@ img {
   .card__link {
     background-color: #fff;
   }
+}
+
+.info {
+  padding: 100px 0;
+}
+.info__block {
+  margin-bottom: 150px;
+}
+
+.benefits {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1200px) {
+  .benefits {
+    display: block;
+  }
+}
+
+.benefit {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f7f7f7;
+  height: 410px;
+  max-width: 370px;
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .benefit {
+    margin: auto;
+    margin-bottom: 40px;
+  }
+}
+.benefit__image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.benefit__text {
+  margin: 26px 100px 0px 26px;
+  font-size: 16px;
+  line-height: 23px;
+}
+.benefit__text strong {
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+}
+
+.documents__title {
+  margin-bottom: 100px;
+}
+@media (max-width: 640px) {
+  .documents__title {
+    font-size: 18px;
+    line-height: normal;
+  }
+}
+
+.documents-block {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 880px) {
+  .documents-block {
+    display: block;
+    text-align: center;
+  }
+}
+.documents-block__item {
+  margin-bottom: 40px;
+}
+.documents-block__text {
+  text-align: center;
+  margin-top: 40px;
+  line-height: 24px;
+  font-size: 18px;
 }/*# sourceMappingURL=style.css.map */
