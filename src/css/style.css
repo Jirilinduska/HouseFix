@@ -354,6 +354,107 @@ img {
   margin: auto;
 }
 
+.steps {
+  padding-bottom: 120px;
+}
+.steps-title {
+  margin-bottom: 60px;
+}
+@media (max-width: 640px) {
+  .steps-title {
+    font-size: 18px;
+  }
+}
+.steps__subtitle {
+  margin-bottom: 75px;
+}
+@media (max-width: 640px) {
+  .steps__subtitle {
+    font-size: 14px;
+  }
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .icons {
+    display: block;
+  }
+}
+
+.icon {
+  text-align: center;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .icon {
+    margin-bottom: 40px;
+  }
+}
+.icon:last-child::after {
+  display: none;
+}
+.icon::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 72px;
+  height: 25px;
+  background-image: url("../img/stepsarrowright.png");
+  top: -10px;
+  right: -100px;
+}
+@media (max-width: 1200px) {
+  .icon::after {
+    display: none;
+  }
+}
+.icon__image {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #ffd200;
+  border-radius: 100px;
+  margin-bottom: 30px;
+}
+.icon__image img {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+.icon__text {
+  max-width: 140px;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.notice {
+  background-color: #ffc000;
+  padding: 100px 0;
+}
+.notice__text {
+  margin: auto;
+  text-align: center;
+  font-size: 32px;
+  max-width: 760px;
+  line-height: 50px;
+  font-weight: 300;
+}
+@media (max-width: 640px) {
+  .notice__text {
+    font-size: 18px;
+    line-height: normal;
+    max-width: 320px;
+  }
+}
+
 .modal {
   position: fixed;
   left: 0;

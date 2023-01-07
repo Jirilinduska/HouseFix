@@ -251,6 +251,81 @@ img
         margin: auto
 
 
+.steps
+    padding-bottom: 120px
+    &-title 
+        margin-bottom: 60px
+        @media (max-width: 640px)
+            font-size: 18px
+    &__subtitle
+        margin-bottom: 75px
+        @media (max-width: 640px)
+            font-size: 14px
+        
+.icons
+    display: flex
+    justify-content: space-between
+    @media (max-width: 768px)
+        display: block
+.icon
+    text-align: center
+    position: relative
+    @media (max-width: 768px)
+        margin-bottom: 40px
+    &:last-child
+        &::after
+            display: none
+    &::after
+        content: ''
+        position: absolute
+        display: block
+        width: 72px
+        height: 25px
+        background-image: url('../img/stepsarrowright.png')
+        top: -10px
+        right: -100px
+        @media (max-width: 1200px)
+            display: none
+        
+    &__image
+        width: 100px
+        height: 100px
+        margin: auto
+        background-color: #fff
+        display: flex
+        justify-content: center
+        align-items: center
+        border: 3px solid #ffd200
+        border-radius: 100px
+        margin-bottom: 30px
+        img
+            width: 40px
+            height: 40px
+            display: inline-block
+            
+    &__text
+        max-width: 140px
+        display: inline-block
+        font-size: 14px
+        line-height: 20px
+
+
+.notice
+    background-color: $secondary
+    padding: 100px 0
+    &__text
+        margin: auto
+        text-align: center
+        font-size: 32px
+        max-width: 760px
+        line-height: 50px
+        font-weight: 300
+        @media (max-width: 640px)
+            font-size: 18px
+            line-height: normal
+            max-width: 320px
+
+
 
 
 
