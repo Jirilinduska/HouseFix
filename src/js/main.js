@@ -38,7 +38,23 @@ $(document).ready(function(){
     });
 
 
-    // Slider
+    // Validace Formuláře
+
+    $('#brief-form').validate({
+      rules: {
+        username: "required",
+        phone: "required",
+      },
+      messages: {
+        username: "Uveďtě vaše jméno",
+        phone: "Potřebujeme vaše telefoní číslo",
+      }
+    });
+
+
+
+
+    // Napojení Slideru 
 
     $('.slider').slick({
         slidesToShow: 3,
